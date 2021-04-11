@@ -5,7 +5,16 @@
   margin-right: 16px;
   font-family: arial,sans-serif;
   font-size: 13px;
+  display: flex;
+  flex-direction: row-reverse;
 }
+a>img{
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+
+}
+
 
 .headerli a {
   display: block;
@@ -13,6 +22,9 @@
   text-align: center;
   padding: 5px 5px;
   text-decoration: none;
+  font-style: inherit;
+  font-family: Arial;
+ 
 }
 
 .headerli a:hover {
@@ -34,6 +46,7 @@
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  border-radius: 25px;
 }
 
 .search-area:hover {
@@ -46,6 +59,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   padding: 5px 8px 0 16px;
   padding-left: 14px;
 }
+
 
 .search-img {
   display: flex;
@@ -102,9 +116,15 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  width: 480px;
+  border: none;
+  
+
 }
 
+
 .googlesearch {
+  
   margin: 11px 4px;
   padding: 0 16px;
   line-height: 27px;
@@ -113,9 +133,14 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   cursor: pointer;
   user-select: none;
 }
-
+.voicelogo{
+  padding-right: 10px;
+  margin-top: 10px;
+ 
+ 
+}
 .feelinglucky {
-  padding: 0 16px;
+  padding: 0 30px;
   line-height: 27px;
   min-width: 54px;
   text-align: center;
@@ -126,20 +151,23 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 .footer {
   margin: 0;
   padding: 0;
+  padding-bottom: 0;
   overflow: hidden;
   border: 1px solid #dfe1e5;
-  border-top: 1px solid #dadce0;
+  border-top: 2px solid #dadce0;
   position: fixed;
   bottom: 0;
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  background-color: #f2f2f2 ;
 }
 
 .footerli {
   float: left;
+  display: inline;
+  padding: 10px;
 }
-
 .footerli a {
   display: block;
   color: #70757a;
@@ -155,3 +183,28 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 .footerli a:hover {
   text-decoration: underline;
 }
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 300px;
+}
+button{
+  border: none;
+  border-radius: 5px;
+  color:#5f6368 ;
+  font-family: Arial;
+  background-color:#f2f2f2  ;
+  font-size: 14px;
+  height: 36px;
+  
+
+}
+button:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  border: 1px solid #f2f2f2;
+}
+
