@@ -4,6 +4,8 @@
   color: gray;
   background-position: 40%;
   background-size: 6%;
+  background-repeat: no-repeat;
+  background-image: url('../assets/search-solid.svg');
 }
 
 input.empty {
@@ -43,4 +45,21 @@ input.empty {
 .rightpanellinks:hover {
   text-decoration: none;
   color: lightgrey;
+}
+.middlearea{
+  max-height: 200px i !important;
+}
+#sticky-sidebar{
+  position: sticky;
+  top: 0;
+
+}
+.rightpanel {
+  background-color: white;
+  border: 10px;
+}
+.fa-ellipsis-h {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
