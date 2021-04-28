@@ -1,11 +1,11 @@
 body {
-  background: black;
+  background-color: cornsilk;
 }
 
 .clock {
   position: relative;
   text-align: center;
-  color: #e98208;
+  color: #ccb79d;
   font-size: 60px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 7px;
