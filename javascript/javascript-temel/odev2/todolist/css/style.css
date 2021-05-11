@@ -105,3 +105,40 @@ input {
 .button:hover {
   background-color: #bbb;
 }
+
+.card-footer{
+  padding:  10px 0px;
+  display: flex;
+}
+.card-footer input{
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  border: 0;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius:5px 0px 0px 5px ;
+}
+.card-footer input:focus,.card-footer span:focus{
+  outline: 0;
+}
+.card-footer span{
+  background-color:#555;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  width: 60px;
+  border-radius: 0px 5px 5px 0px;
+}
+.card-footer span:hover{
+  background-color: beige;
+}
+.card-body{
+  padding: 10px 0px;
+  height: 600px;
+  overflow-x: scroll;
+}
+.list{
+  list-style: none;
+}
