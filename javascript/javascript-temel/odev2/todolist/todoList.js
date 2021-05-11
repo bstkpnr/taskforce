@@ -7,6 +7,18 @@ for (let i = 0; i < todoList.length; i++) {
   span.appendChild(text);
   todoList[i].appendChild(span);
 }
+const getTodoFromStorage = () => {
+    const storage = JSON.parse(localStorage.getItem("todoList"));
+    return storage ? storage : [];
+  };
+   let todoListe = getTodoFromStorage();
+
+
+function saveToDoStorage(todo) {
+    todoList.push(todo);
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+    createTodoItem(todo);
+  }
 
 
 let close = document.getElementsByClassName('close');
@@ -14,6 +26,8 @@ for (let i = 0; i < close.length; i++) {
   close[i].onclick = function () {
     let div = this.parentElement;
     div.style.display = "none";
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+
   };
 }
 todoInput.addEventListener("keyup", (event) => {
